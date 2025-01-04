@@ -51,3 +51,10 @@ Como criar o banco de dados postgres no dcoker
 
   ```bash
   docker run --name my_postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5433:5432 -d -v my_postgres_data:/var/lib/postgresql/data postgres:latest
+
+
+### Conectando o postgress pelo vscode 
+  ```bash
+DATABASE_URL="postgresql://postgres:postgres@localhost:5433/postgres"
+  ```
+- postgresql://<USUÁRIO>:<SENHA>@<HOST>:<PORTA>/<NOME_DO_BANCO>
