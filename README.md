@@ -57,4 +57,5 @@ Como criar o banco de dados postgres no dcoker
   ```bash
 DATABASE_URL="postgresql://postgres:postgres@localhost:5433/postgres"
   ```
-- postgresql://<USUÁRIO>:<SENHA>@<H0ST>:<PORTA>/<NOME_DO_BANCO>
+```bash
+ postgresql://<USUÁRIO>:<SENHA>@<H0ST>:<PORTA>/<NOME_DO_BANCO>
