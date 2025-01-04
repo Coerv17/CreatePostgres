@@ -50,8 +50,7 @@ Como criar o banco de dados postgres no dcoker
   Para configurar a persistência de dados, utilize a opção `-v` para montar um volume:
 
   ```bash
-  docker run --name my_postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5433:5432 -d -v my_postgres_data:/var/lib/postgresql/data postgres:latest
-
+  docker run --name my_postgres -e POSTGRES_PASSWORD=postgres -p 5433:5432 -d -v my_postgres_data:/var/lib/postgresql/data --network n8n_network postgres:latest
 
 ### Conectando o postgress pelo vscode 
   ```bash
